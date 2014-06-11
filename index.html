@@ -17,7 +17,7 @@
         <tr ng-repeat="numberA in numbers">
           <td ng-repeat="numberB in numbers"
             ng-click="setActiveNumber(compute(numberA, numberB))"
-            ng-mouseover="setActiveFactors(numberA, numberB)" ng-class="{hover: matchesFactor(numberA, numberB)}"
+            ng-mouseover="setActiveFactors(numberA, numberB)" ng-class="{'row' : (numberA === activeFactorA), 'column' : (numberB === activeFactorB), 'center-number' :  (numberB == activeFactorB && numberA == activeFactorA) }"
              ng-mouseleave="clearActiveFactors()">
             {{ compute(numberA, numberB) }}
         </td>

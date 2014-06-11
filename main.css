@@ -5,7 +5,16 @@ td {
   text-align:center;
   vertical-align:middle;
 }
-.hover {
-  color: white;
-  background-color: orange;
+
+.center-number {
+    color: #000;
+    background-color: aqua !important   ;
+}
+.row {
+    color: white;
+    background-color: orange;
+}
+.column {
+    color: white;
+    background-color: crimson;
 }
